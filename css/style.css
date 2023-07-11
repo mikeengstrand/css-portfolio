@@ -59,10 +59,10 @@ a {
 .hero {
   height: 100px;
   width: 100%;
-  background-image: url("../assets/images/image.png");
+  background-image: url("../assets/Images/image.png");
   background-size: cover;
   background-position: center;
-}
+}/* note the image file in GitHub uses a capital I, updating this in the css to capital I so it works in Github. if you run this again in VS code you will need to make the I in the file name lowercase to see the images  */
 
 
 body {
