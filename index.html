@@ -11,11 +11,12 @@
 <body>
   <!-- this area will create the top portion of the website with the header and the different links to about me, work, contact me and resume -->
   <header class="header">
-    <h1>Mike Engstrands Portfolio</h1>
+    <h1 class="title">Mike Engstrand's Portfolio</h1>
 
     <!-- List of items that appear at the top of the webpage and will link to different sections in the body of the webpage  -->
     <nav>
       <ul> 
+          <!-- when you click on each item in the nav bar it will bring you to the section you clicked on -->
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#contact-me">Contact Me</a></li>
@@ -26,43 +27,69 @@
   </header>
 
   <!-- this will create a little wooden background under the header area -->
-  <!-- TO DOOOOOO We need to figure out the subtitle here -->
   <figure class="hero"></figure>
 
-  <!-- This class sets up our main -->
-  <main class="content">
+  <main>
+
     <section id="about-me" class="about-me">
-      <h2>About Me</h2>
-      <p>My name is Mike Engstrand and I am a former tax accounting learning to code. I live in the Twin Cities area and I love it here.</p>
-      <p>Please take take some time and view some of the below projects that I have been working on during my time at the University of Minnesota Bootcamp</p>
-    </section>
-
-    <section id="work1" class="work1">
-      <h2></h2>
+      <!-- the ID above will allow the webpage to jump to this location when  "About Me" is clicked from within the nav bar -->
+      <h2> About Me</h2>
+        <p>My name is Mike Engstrand and I am a former tax accounting learning  to code. I live in the Twin Cities area and I love it here. Please take take some time and view some of the below projects that I have been working on during my time at the University of Minnesota Bootcam
+        </p>
 
     </section>
 
-    <section id="work2" class="work2">
-      <h2></h2>
+    <div>
+    <!-- this area holds the images that will be used for each proejct. when the image is linked it will bring you to a live version of the project. we currently only have the first homework assignment up and running. the rest are placeholders that link to Google  -->
+      <h2 id="work">Work</h2>
+      <!-- the ID above will allow the webpage to jump to this location when  "About Me" is clicked from within the nav bar -->
 
-    </section>
+      <!-- class Card1 is setup the same as the class Card other than the image size. -->
+      <section class="card1">
+        <h3>Semantics</h3>
+        <a href="https://mikeengstrand.github.io/semantic-html/"><img src="./assets/images/semantics.png" target="_blank" alt="Semantics."/></a>
+      </section>
 
+      <!-- each card includes an image. When you click onthe image it will bring you to a website. I do not have additional projects to include so these are currently stock photos and a link to google -->
+      <section class="card">
+        <h3>CSS</h3>
+        <a href="https://google.com"><img src="./assets/images/css.jpg" target="_blank" alt="CSS"/></a>
+      </section>
+
+      <section class="card">
+        <h3>Java</h3>
+        <a href="https://google.com"><img src="./assets/images/js.jpg" target="_blank" alt="Java"/></a>
+      </section>
+
+      <section class="card">
+        <h3>Web API</h3>
+        <a href="https://google.com"><img src="./assets/images/web.jpg" target="_blank" alt="Web API"/></a>
+      </section>
+
+      <section class="card">
+        <h3>Third Party API</h3>
+        <a href="https://google.com"><img src="./assets/images/third.jpg" target="_blank" alt="Third Party API"/></a>
+      </section>
+    </div>
   </main>
 
+<!-- ///////////////////////////////////////////// -->
+
+
   <!-- this area will include contact info and link to github, twitter and spotify -->
-<footer class ="footer">
-  <h2>Contact Me</h2>
-  <ul> 
-    <li>"612-207-3757"</li>
-    <!-- link to email -->
-    <li><a href = "mailto: michael.d.engstrand1@gmail.com">michael.d.engstrand1@gmail.com</a></li>
-    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-    <!-- I dont use Twitter so its linked to the login page -->
-    <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fexplore" target="_blank">Twitter</a></li>
-    <!-- I dont feel like linking my spotify to this but I am inlcuding a link to the homepage -->
-    <li><a href="https://open.spotify.com/search" target="_blank">Spotify</a></li>
-  </ul>
-</footer>
+  <footer id="contact-me" class ="footer">
+    <h3>Contact Me</h3>
+    <ul> 
+      <li>612-207-3757</li>
+      <!-- link to email -->
+      <li><a href = "mailto: michael.d.engstrand1@gmail.com">michael.d.engstrand1@gmail.com</a></li>
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <!-- I dont use Twitter so its linked to the login page -->
+      <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fexplore" target="_blank">Twitter</a></li>
+      <!-- I dont feel like linking my spotify to this but I am inlcuding a link to the homepage -->
+      <li><a href="https://open.spotify.com/search" target="_blank">Spotify</a></li>
+    </ul>
+  </footer>
 
 </body>
 </html>
